@@ -1,6 +1,6 @@
 # Aws.LocalStack
 
-Docker configuration for localstack to host AWS services locally
+Docker configuration for [localstack](https://github.com/localstack/localstack) to host AWS services locally
 
 To run the container:
 docker pull localstack/locastack
@@ -10,6 +10,7 @@ watch running services
 http://localhost:8055/#!/infra
 
 init SQS and SNS with AWS CLI
+
 Create Topic:
 ```
 $ aws --endpoint-url=http://localhost:4575 sns create-topic --name my_topic
